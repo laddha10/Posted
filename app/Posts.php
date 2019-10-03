@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Posts extends Model
 {
     protected $guarded = [];
-    // returns all comments on the post
+    // returns all comments related to the post
     public function comments()
     {
         return $this->hasMany('App\Comments','on_post');
